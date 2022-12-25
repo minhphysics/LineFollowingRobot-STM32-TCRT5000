@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"irsensor\startup_stm32f103xb.o"
+"irsensor\main.o"
+"irsensor\stm32f1xx_it.o"
+"irsensor\stm32f1xx_hal_msp.o"
+"irsensor\stm32f1xx_hal_gpio_ex.o"
+"irsensor\stm32f1xx_hal_adc.o"
+"irsensor\stm32f1xx_hal_adc_ex.o"
+"irsensor\stm32f1xx_hal.o"
+"irsensor\stm32f1xx_hal_rcc.o"
+"irsensor\stm32f1xx_hal_rcc_ex.o"
+"irsensor\stm32f1xx_hal_gpio.o"
+"irsensor\stm32f1xx_hal_dma.o"
+"irsensor\stm32f1xx_hal_cortex.o"
+"irsensor\stm32f1xx_hal_pwr.o"
+"irsensor\stm32f1xx_hal_flash.o"
+"irsensor\stm32f1xx_hal_flash_ex.o"
+"irsensor\stm32f1xx_hal_exti.o"
+"irsensor\stm32f1xx_hal_tim.o"
+"irsensor\stm32f1xx_hal_tim_ex.o"
+"irsensor\system_stm32f1xx.o"
+--strict --scatter "IRSENSOR\IRSENSOR.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IRSENSOR.map" -o IRSENSOR\IRSENSOR.axf
